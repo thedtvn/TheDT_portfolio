@@ -15,7 +15,6 @@ tags:
 
 I'm working on a payment system that need to access MB Bank bank to check transaction. But we i don't have 
 corporate tax code to register MB Bank bisiness account to get access.
-corporate tax code to register MB Bank bisiness account to get access.
 
 ## What is mbbank-lib?
 
