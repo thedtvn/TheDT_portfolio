@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import Grid from '../components/Grid.astro';
+import Icon from '../components/Icon.astro';
+
+let list_links = [
+    {
+        name: "Github",
+        icon: "github-logo",
+        account_name: "The DT", 
+        url: "https://github.com/thedtvn",
+    },
+    {
+        name: "Discord",
+        icon: "discord-logo",
+        account_name: "@thedtvn", 
+        url: "https://discord.com/users/542602170080428063",
+    },
+    {
+        name: "Email",
+        icon: "email-icon",
+        account_name: "duongtuan30306@gmail", 
+        url: "mailto:duongtuan30306@gmail.com",
+    },
+    {
+        name: "Google Dev",
+        icon: "google-logo",
+        account_name: "The DT", 
+        url: "https://g.dev/thedt",
+    },
+    {
+        name: "Facebook",
+        icon: "facebook-logo",
+        account_name: "Nguyễn Dương Tuấn", 
+        url: "https://facebook.com/thedt",
+    },
+    {
+        name: "Zalo",
+        icon: "info-icon",
+        account_name: "0961291206", 
+        url: "https://zalo.me/0961291206",
+    },
+    {
+        name: "Telegram",
+        icon: "telegram-logo",
+        account_name: "@thedtvn", 
+        url: "https://t.me/thedtvn",
+    },
+    {
+        name: "Instagram",
+        icon: "instagram-logo",
+        account_name: "thedtvn", 
+        url: "https://instagram.com/thedtvn",
+    },
+]
+---
+
+<BaseLayout title="Social Links | About The DT" description="The DTSocial Links">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+            <h2 class="section-title">The DT Social Links</h2>
+            <Grid>
+                {list_links.map((item) => (
+                    <a href={item.url} target={ !/(javascript|mailto):.+/.test(item.url) ? "_blank" : "_self"}>
+                        <div>
+                            <Icon icon={item.icon} size='3.5em' color="var(--accent-regular)" />
+                            <h5>{item.name}</h5>
+                            <p>{item.account_name}</p>
+                        </div>
+                    </a>
+                ))}
+            </Grid>
+		</main>
+	</div>
+</BaseLayout>
+<style is:global>
+    .grid {
+        margin-top: 1em;
+    }
+    .grid * div {
+        border-radius: 1em;
+        height: max-content;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        background: var(--gradient-subtle);
+        box-shadow: var(--shadow-md);
+        transition: var(--theme-transition);
+        text-align: center;
+        justify-content: center;
+    }
+    .grid * div:hover {
+        transform: scale(1.05);
+    }
+</style>
+
