@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
+import { iconPaths } from '../components/IconPaths';
 import Grid from '../components/Grid.astro';
 import Icon from '../components/Icon.astro';
 
-let list_links = [
+let list_links: {name: string, icon: keyof typeof iconPaths, account_name: string, url: string}[] = [
     {
         name: "Github",
         icon: "github-logo",
