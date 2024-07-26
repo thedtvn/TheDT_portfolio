@@ -36,4 +36,4 @@ Just a discord bot that i in 3 year that it make just for fun and to learn how t
 - Some Api can be hide in core so try to read source that maybe help you to inject your custom data in to input
 
 
-### [check it out here](https://github.com/fantasybot-red)
+### [Source code here](https://github.com/fantasybot-red)
