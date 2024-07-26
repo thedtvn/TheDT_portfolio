@@ -14,11 +14,6 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-let fake_header = ["Express", "PHP", "ASP.NET", "Next.js", "JSF", "web2py", "Virgool", "Alpine", "Vanilla", "WP Engine", "PageFly", "ZendServer", "Elementor Cloud"];
-
-for (let i of fake_header) {
-    Astro.response.append("X-Powered-By", "deflate");
-}
 ---
 
 <html lang="en">
