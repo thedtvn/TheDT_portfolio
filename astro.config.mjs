@@ -23,6 +23,7 @@ export default defineConfig({
     assets: 'assets',
   },
   vite: vite_config,
+  // headers for run locals
   server: {
     headers: {
       "X-Powered-By": fake_header,
