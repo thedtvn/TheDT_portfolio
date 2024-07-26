@@ -13,8 +13,6 @@ let vite_config = {
   }
 };
 
-let fake_header = ["Express", "PHP", "ASP.NET", "Next.js", "JSF", "web2py", "Virgool", "Alpine", "Vanilla", "WP Engine", "PageFly", "ZendServer", "Elementor Cloud"];
-
 // https://astro.build/config
 export default defineConfig({
   output: "server",
@@ -22,11 +20,5 @@ export default defineConfig({
   build: {
     assets: 'assets',
   },
-  vite: vite_config,
-  // headers for run locals
-  server: {
-    headers: {
-      "X-Powered-By": fake_header,
-    }
-  }
+  vite: vite_config
 });
