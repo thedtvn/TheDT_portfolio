@@ -11,12 +11,19 @@ tags:
   - Python
 ---
 
-## Why MB Bank?
+## Why MB Bank ?
 
 I'm working on a payment system that need to access MB Bank bank to check transaction. But we i don't have 
-corporate tax code to register MB Bank bisiness account to get access.
+corporate tax code to register MB Bank business account to get access.
 
-## What is mbbank-lib?
+## What is mbbank-lib can do ?
 
-We designed a python library to access MB Bank API with python and get data from MB Bank. this library 
-can be used in any python project. for example, we can use it in our payment system.
+it can get transaction history from your account, card transaction history, get account balance, saving ... but **CAN'T** tranfer money from your account.
+
+## Technology
+
+- Aiohttp (for Asyncio Request)
+- Requests (for Syncio Request)
+- Wasmtime (for Run login encryption Wasm)
+- Pillow (for image processing)
+- Tesseract (for image OCR)
